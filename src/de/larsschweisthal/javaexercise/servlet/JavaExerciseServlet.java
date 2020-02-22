@@ -1,3 +1,5 @@
+package de.larsschweisthal.javaexercise.servlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
