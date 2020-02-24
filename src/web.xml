@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @TODO move definition to "@WebServlet" annotation" -->
+<web-app>
+    <!-- The "display name" in Apache Tomcat Manager  -->
+    <display-name>Just a test servlet</display-name>
+
+    <servlet>
+        <!-- Give it a name, so we can set a servlet-mapping -->
+        <servlet-name>test</servlet-name>
+
+        <!-- The entry point for the Servlet -->
+        <servlet-class>de.larsschweisthal.javaexercise.servlet.JavaExerciseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <!-- has to match a certain servlet -->
+        <servlet-name>test</servlet-name>
+
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>
